@@ -1,203 +1,23 @@
-![Single-Page Markdown Website](media/single-page-markdown-website.svg)
+![Humanitarian AI for the Global South](media/single-page-markdown-website.svg)
 
-> Create a nice single-page documentation website from one or more Markdown files
+This workshop is intended to give CRAFT attendees an opportunity for deep exploration of the challenges of developing, implementing, and regulating AI for the Global South. We intend to build on the works of ![UNOCHA report “ML in Practice”](https://partnershiponai.org/wp-content/uploads/2023/01/PAI_about-ml-in-practice-UNOCHA.pdf) with Partnership on AI, and ![Humdata’s Peer Review framework](https://data.humdata.org/dataset/2048a947-5714-4220-905b-e662cbcd14c8/resource/76e488d9-b69d-41bd-927c-116d633bac7b/download/peer-review-framework-2020.pdf) for predictive analytics in Humanitarian Response to bring together a global community of researchers, practitioners and policy-makers around the topic of AI for Humanitarian Development.
 
-# Features
+We will explore the above topic through a case study of a social enterprise supported by an international Non-Governmental Organization (NGO)  who are building AI to highlight the environmental and health challenges faced by children. As the World Health Organization (WHO) ![pointed out](https://www.who.int/news/item/04-04-2022-billions-of-people-still-breathe-unhealthy-air-new-who-data), “Almost the entire global population (99%) breathes air that exceeds WHO air quality limits, and threatens their health.” With this premise, the case study will discuss the implementation of AI to measure children's exposure in the global south to harmful air pollutants that can lead to respiratory illness. Participants will be introduced to the potential pitfalls of deploying such a set of algorithms, such as the need for explainability and verifiability, regulatory components, and the participatory challenge. We invite participants to introduce further use cases for AI development in areas such as agriculture, healthcare, and education and how these technologies can have a significant impact on the quality of life for millions of people in these regions. 
 
-- Zero configuration
-- Render a table of contents, shortcuts to the top-level sections, and custom links
-- Include the contents of other Markdown files using a special syntax
-- Responsive from mobile and up
-- Dark mode (follows system settings)
+# Agenda
 
-# Quick start
+After introducing the case study, we will invite 3-4 speakers, covering diverse stakeholder perspectives—decision-makers, AI regulators, and Industry practitioners, among others—in this case study. We then break out the attendees into a number of focus groups. Each group will be given a particular challenge, such as:
+- Issues related to data availability and different forms of knowledge, such as labeling and data quality
+- Nuances about data privacy and AI ethics unique to the global south
+- Capacity building and collaboration
+We will invite the participants to draw on their diverse experiences and expertise to dive deep into their assigned challenge area, and come up with proposals of potential solutions.
 
-*Requires [Node.js](https://nodejs.org).*
+The workshop will end with a group discussion with all participants. Representatives of each breakout group will briefly present the outcomes from their respective group discussion.
 
-```sh
-$ npx --yes -- single-page-markdown-website '*.md' --open
-```
+## Coordinators
+Please get in touch with the following workshop coordinators to register your interest.
 
-The above command does the following:
-
-- Concatenates the given globs of Markdown files (`'*.md'`) and renders the result as a single-page website to `./build/index.html`.
-- Copies any local image file referenced in the Markdown to `./build/images`.
-- Opens the rendered page in your default web browser.
-
-# Configuration
-
-Configuration is via the **`"single-page-markdown-website"`** key of your `package.json` file.
-
-- Single-Page Markdown Website works without configuration out of the box; all configuration options are optional.
-- Some configuration options default to values specified in your `package.json` or `lerna.json`.
-
-```json
-{
-  "single-page-markdown-website": {
-    "baseUrl": "https://yuanqing.github.io/single-page-markdown-website/",
-    "title": "Single-Page Markdown Website",
-    "description": "Create a nice single-page documentation website from one or more Markdown files",
-    "toc": true,
-    "sections": true,
-    "links": [
-      {
-        "text": "GitHub",
-        "url": "https://github.com/yuanqing/single-page-markdown-website"
-      }
-    ],
-    "faviconImage": "media/favicon.svg",
-    "shareImage": "media/share.png"
-  }
-}
-```
-
-## `"baseUrl"`
-
-(*`null`* or *`string`*)
-
-The base URL of the single-page website.
-
-- Defaults to `null`
-
-## `"title"`
-
-(*`null`* or *`string`*)
-
-The title of the page.
-
-- Defaults to `packageJson.name`, else `null`
-
-## `"description"`
-
-(*`null`* or *`string`*)
-
-The `meta` description of the page.
-
-- Defaults to `packageJson.description`, else `null`
-
-## `"toc"`
-
-(*`boolean`*)
-
-Whether to render a Table of Contents.
-
-- Defaults to `true`
-
-## `"sections"`
-
-(*`boolean`*)
-
-Whether to render sections shortcuts in the menu. (Sections are the level-one headers (`# `) in the Markdown.)
-
-- Defaults to `true`
-
-## `"links"`
-
-(*`Array<{ text: string, url: string }>`*)
-
-A list of links to add to the menu.
-
-- Defaults to `[{ text: 'GitHub', url: packageJson.homepage }]`, else `null`
-
-## `"faviconImage"`
-
-(*`null`* or *`string`*)
-
-The URL or file path of the favicon image to use.
-
-- Defaults to `null`
-
-## `"shareImage"`
-
-(*`null`* or *`string`*)
-
-The URL or file path of the share image to use.
-
-- Defaults to `null`
-
-## `"version"`
-
-(*`null`* or *`string`*)
-
-The version number to show beside the title.
-
-- Defaults to `v${lernaJson.version}`, else `v${packageJson.version}`, else `null`
-
-# Tips
-
-## Including files
-
-Use the following syntax to include the entire contents of a local file `foo.md` in your Markdown:
-
-```
-
-./foo.md
-
-```
-
-Note that an empty line is required immediately before and after the file path.
-
-- If the `./` prefix is used, then the file path is resolved relative to the current Markdown file.
-- If the `/` prefix is used, then the file path is resolved relative to the current working directory (ie. `process.cwd()`).
-
-You can also specify a glob to include multiple files:
-
-```
-
-./bar/*.md
-
-```
-
-## Deploying to GitHub Pages
-
-Deploy your single-page website to [GitHub Pages](https://pages.github.com/) via one of the following two ways:
-
-1. Commit the `./build` directory and push your changes. Then, set the `./build` directory as the [publishing source](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in your GitHub repository settings.
-
-2. Use the [`gh-pages`](https://github.com/tschaub/gh-pages) CLI to deploy the `./build` directory to the `gh-pages` branch:
-
-    ```sh
-    $ npx --yes -- gh-pages --dist build
-    ```
-
-    Then, set the `gh-pages` branch as the publishing source in your GitHub repository settings.
-
-## Deploying to Cloudflare Pages
-
-To deploy your single-page website to [Cloudflare Pages](https://pages.cloudflare.com/), use the following settings in your [build configuration](https://developers.cloudflare.com/pages/get-started#configuring-your-deployment):
-
-- Build command: `exit 0`
-- Build output directory: `/build`
-- Root directory: `/`
-
-# CLI
-
-<!-- ``` markdown-interpolate: node packages/single-page-markdown-website/lib/cli.js --help -->
-```
-
-  Create a nice single-page documentation website from one or more Markdown files.
-
-  Usage:
-    $ single-page-markdown-website <files> [options]
-
-  Arguments:
-    <files>  One or more globs of Markdown files. Defaults to 'README.md'.
-
-  Options:
-    -h, --help     Print this message.
-    -p, --open     Whether to open the generated page in the default web
-                   browser. Defaults to 'false'.
-    -o, --output   Set the output directory. Defaults to './build'.
-    -v, --version  Print the version.
-    -w, --watch    Whether to watch for changes and regenerate the page.
-                   Defaults to 'false'.
-
-  Examples:
-    $ single-page-markdown-website
-    $ single-page-markdown-website '*.md'
-    $ single-page-markdown-website --open
-    $ single-page-markdown-website --output dist
-    $ single-page-markdown-website --watch
-
-```
-<!-- ``` end -->
+- Christina Last (she/her), Masters student, Massachusetts Institute of Technology. lastc@mit.edu. CTO, AQAI (UNICEF-backed startup)
+- Prithviraj Pramanik (he/him), PhD Candidate, National Institute of Technology Durgapur. prithvirajpramanik@yahoo.co.in.  CEO, AQAI (UNICEF-backed startup)
+- Avijit Ghosh(he/him); PhD Candidate, Northeastern University, and Twitter (intern), Boston. ghosh.a@northeastern.edu
+- Subhabrata Majumdar (he/him), Founder, AI Vulnerability Database. zoom.subha@gmail.com.  
