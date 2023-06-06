@@ -4,3 +4,4 @@ lib/
 node_modules/
 *.log
 packages/single-page-markdown-website/README.md
+.history/
