@@ -1,3 +1,7 @@
+---
+title-heading: false
+---
+
 ![Humanitarian AI for the Global South](media/single-page-markdown-website.svg)
 
 ## About
