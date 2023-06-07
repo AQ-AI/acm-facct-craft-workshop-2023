@@ -1,5 +1,6 @@
 ---
-title-heading: false
+name: Humanitarian AI for the Global South
+title: null
 ---
 ![Humanitarian AI for the Global South](media/single-page-markdown-website.svg)
 
