@@ -6,6 +6,7 @@ We intend to bring together the FAccT community around the topic of AI for Human
 ## Schedule
 This CRAFT session will be held virtually, on **June 15, 2023 10:15 - 11:45 US Central time**. The collaborative activities will be aimed at facilitating a participatory conversation. We enable this through a mix of large group discussions and small group breakout sessions.
 
+Mode: Virtual
 
 | Time (CT) | Event |
 |---|---|
@@ -32,6 +33,12 @@ This CRAFT session will be held virtually, on **June 15, 2023 10:15 - 11:45 US C
 | [Christina Last](https://christinalast.com/), Massachusetts Institute of Technology, Co-Founder AQAI | [Prithviraj Pramanik](https://www.linkedin.com/in/prithvirajpramanik/), National Institute of Technology Durgapur, Co-Founder AQAI | [Avijit Ghosh](https://evijit.io/), AdeptID, Adjunct Faculty, Northeastern University | [Subho Majumdar](subhomajumdar.com), AI Risk and Vulnerability Alliance |
 
 
-## Virtual conference link will be shared with registered participants 
-Please register to attend: 
-[RSVP Link](https://forms.gle/2QdNpL7UobpeLxSWA)
+<br/><br/>
+
+## <p style="text-align: center;">Virtual conference link will be shared with the registered participants</p>
+
+<br/><br/>
+### <p style="text-align: center;"> Please register to attend: [RSVP Link](https://forms.gle/2QdNpL7UobpeLxSWA)</p>
+
+<br/><br/>
+### <p style="text-align: center;">  In case you have any further questions contact: [prithviraj@aqai.xyz](prithviraj@aqai.xyz)</p>
