@@ -35,10 +35,10 @@ Mode: Virtual
 
 <br/><br/>
 
-## <p style="text-align: center;">Virtual conference link will be shared with the registered participants</p>
-
+## Virtual conference link will be shared with the registered participants
 <br/><br/>
-### <p style="text-align: center;"> Please register to attend: [RSVP Link](https://forms.gle/2QdNpL7UobpeLxSWA)</p>
 
+### Please register to attend: [RSVP Link](https://forms.gle/2QdNpL7UobpeLxSWA)
 <br/><br/>
-### <p style="text-align: center;">  In case you have any further questions contact: [prithviraj@aqai.xyz](prithviraj@aqai.xyz)</p>
+
+### In case you have any further questions contact: [prithviraj@aqai.xyz](prithviraj@aqai.xyz)
